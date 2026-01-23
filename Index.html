@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mortgage Calculator</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+</head>
+<body>
+
+    <!-- Page Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Mortgage Calculator</h1>
+            <p>Calculate your monthly mortgage repayments easily</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="calculator">
+
+            <!-- Left: Form Section -->
+            <div class="form-section">
+                <h2>Mortgage Details</h2>
+
+                <label>Mortgage Amount</label>
+                <input type="number" placeholder="Enter amount">
+
+                <label>Mortgage Term (years)</label>
+                <input type="number" placeholder="Years">
+
+                <label>Interest Rate (%)</label>
+                <input type="number" placeholder="Rate">
+
+                <label>Mortgage Type</label>
+                <div class="radio-group">
+                    <input type="radio" name="type" checked> Repayment
+                    <input type="radio" name="type"> Interest Only
+                </div>
+
+                <button>Calculate Repayments</button>
+            </div>
+
+            <!-- Right: Result Section -->
+            <div class="result-section">
+                <h2>Results shown here</h2>
+                <p>
+                    Complete the form and click <b>Calculate Repayments</b>
+                    to see what your monthly repayments would be.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
