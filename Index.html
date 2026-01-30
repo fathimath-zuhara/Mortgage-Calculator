@@ -3,55 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Mortgage Calculator</title>
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Page Container -->
-    <div class="container">
+<div class="page">
+    <div class="card">
 
-        <!-- Header -->
-        <header class="header">
-            <h1>Mortgage Calculator</h1>
-            <p>Calculate your monthly mortgage repayments easily</p>
-        </header>
+        <!-- LEFT SECTION -->
+        <div class="left">
+            <div class="top">
+                <h2>Mortgage Calculator</h2>
+                <a href="#" class="clear-btn">Clear All</a>
+            </div>
 
-        <!-- Main Content -->
-        <div class="calculator">
+            <label>Mortgage Amount</label>
+            <input type="number" placeholder="£">
 
-            <!-- Left: Form Section -->
-            <div class="form-section">
-                <h2>Mortgage Details</h2>
-
-                <label>Mortgage Amount</label>
-                <input type="number" placeholder="Enter amount">
-
-                <label>Mortgage Term (years)</label>
-                <input type="number" placeholder="Years">
-
-                <label>Interest Rate (%)</label>
-                <input type="number" placeholder="Rate">
-
-                <label>Mortgage Type</label>
-                <div class="radio-group">
-                    <input type="radio" name="type" checked> Repayment
-                    <input type="radio" name="type"> Interest Only
+            <div class="row">
+                <div>
+                    <label>Mortgage Term</label>
+                    <input type="number" placeholder="years">
                 </div>
-
-                <button>Calculate Repayments</button>
+                <div>
+                    <label>Interest Rate</label>
+                    <input type="number" placeholder="%">
+                </div>
             </div>
 
-            <!-- Right: Result Section -->
-            <div class="result-section">
-                <h2>Results shown here</h2>
-                <p>
-                    Complete the form and click <b>Calculate Repayments</b>
-                    to see what your monthly repayments would be.
-                </p>
-            </div>
+            <label>Mortgage Type</label>
 
+            <div class="radio"> 
+                <input type="radio" name="type" checked> 
+                <span>Repayment</span> </div>
+
+            <div class="radio"> 
+                <input type="radio" name="type"> 
+                <span>Interest Only</span> </div>
+
+            <!-- CALCULATE BUTTON -->
+            <button type="button" class="calc-btn">
+                Calculate Repayments
+            </button>
         </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="right">
+            <h3>Results shown here</h3>
+            <p>
+                Complete the form and click
+                <strong>Calculate Repayments</strong>
+                to see what your monthly repayments would be.
+            </p>
+
+            <img src="images/mortgagepayments.png" alt="Mortgage Illustration" class="right-img">
+        </div>
+
     </div>
+</div>
 
 </body>
 </html>
